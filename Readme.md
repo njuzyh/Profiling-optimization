@@ -71,14 +71,14 @@
 <font style="color:rgb(38, 38, 38);">最终你需要提交以下材料：</font>
 
 <h4 id="lHTrU"><font style="color:rgb(38, 38, 38);">优化后的代码：</font></h4>
-<font style="color:rgb(38, 38, 38);">○代码结构不做要求</font>  
-<font style="color:rgb(38, 38, 38);">○要给出能够运行的python环境（requirement.txt）</font>  
-<font style="color:rgb(38, 38, 38);">○要给出能成功运行代码的脚本</font>
++ <font style="color:rgb(38, 38, 38);">代码结构不做要求</font>  
++ <font style="color:rgb(38, 38, 38);">要给出能够运行的python环境（requirement.txt）</font>  
++ <font style="color:rgb(38, 38, 38);">要给出能成功运行代码的脚本</font>
 
 <h4 id="OGgyt"><font style="color:rgb(38, 38, 38);">实验报告</font></h4>
-**<font style="color:rgb(38, 38, 38);">实现方法</font>**<font style="color:rgb(38, 38, 38);">：详细描述整个分析和优化过程，重点包括profiling结果的分析、优化策略的选择等</font>  
-**<font style="color:rgb(38, 38, 38);">实验结果</font>**<font style="color:rgb(38, 38, 38);">：展示 baseline 的 profiling 结果（Top 5算子性能）</font>，<font style="color:rgb(38, 38, 38);">展示Top 5算子的roofline分析结果，以及选择对应优化后的profiling结果（包括训练时间的加速比、新的Top 5算子性能及其roofline分析结果）</font>  
-**<font style="color:rgb(38, 38, 38);">结果分析</font>**<font style="color:rgb(38, 38, 38);">：对以上实验结果的分析，是否可以继续优化的探讨，以及实验过程中遇到的问题和解决过程</font>
++ **<font style="color:rgb(38, 38, 38);">实现方法</font>**<font style="color:rgb(38, 38, 38);">：详细描述整个分析和优化过程，重点包括profiling结果的分析、优化策略的选择等</font>  
++ **<font style="color:rgb(38, 38, 38);">实验结果</font>**<font style="color:rgb(38, 38, 38);">：展示 baseline 的 profiling 结果（Top 5算子性能）</font>，<font style="color:rgb(38, 38, 38);">展示Top 5算子的roofline分析结果，以及选择对应优化后的profiling结果（包括训练时间的加速比、新的Top 5算子性能及其roofline分析结果）</font>  
++ **<font style="color:rgb(38, 38, 38);">结果分析</font>**<font style="color:rgb(38, 38, 38);">：对以上实验结果的分析，是否可以继续优化的探讨，以及实验过程中遇到的问题和解决过程</font>
 
   
 <h2 id="sec5"><font style="color:rgb(38, 38, 38);">五、注意事项</font></h2>  
