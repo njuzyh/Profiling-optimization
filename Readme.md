@@ -31,6 +31,7 @@
 通过<font style="color:rgb(6, 6, 7);">profiling我们可以定位出实践中耗时最久的算子，同时也可以发现其主要的问题来源。因此接下来需要对它们进行针对性优化。常见的训练性能优化策略包括数据预处理、通信、算子实现等多个方面：</font>
 
 <h4 id="cXTgH"><font style="color:rgb(6, 6, 7);">数据预处理优化</font></h4>
+
 + **<font style="color:rgb(6, 6, 7);">并行处理</font>**<font style="color:rgb(6, 6, 7);">：通过多线程或进程并行处理数据，加快数据预处理速度。</font>
 + **<font style="color:rgb(6, 6, 7);">数据压缩</font>**<font style="color:rgb(6, 6, 7);">：减少数据存储空间和传输开销，降低预处理时间</font><font style="color:rgb(6, 6, 7);">。</font>
 + **<font style="color:rgb(6, 6, 7);">算法优化</font>**<font style="color:rgb(6, 6, 7);">：使用更高效的算法，减少时间复杂度</font><font style="color:rgb(6, 6, 7);">。</font>
@@ -38,17 +39,20 @@
 + **<font style="color:rgb(6, 6, 7);">数据预处理流水线</font>**<font style="color:rgb(6, 6, 7);">：将数据预处理步骤分解为多个阶段，形成流水线处理，提高整体效率。</font>
 
 <h4 id="e2HyG"><font style="color:rgb(6, 6, 7);">算子实现优化</font></h4>
+
 + **<font style="color:rgb(6, 6, 7);">算子融合</font>**<font style="color:rgb(6, 6, 7);">：将多个小算子合并成大算子，减少Kernel Launch开销和访存开销</font><font style="color:rgb(6, 6, 7);">。</font>
 + **<font style="color:rgb(6, 6, 7);">内存优化</font>**<font style="color:rgb(6, 6, 7);">：考虑内存分块等方式，减少全局内存访问，使用共享内存或寄存器来优化数据访问。</font>
 + **<font style="color:rgb(6, 6, 7);">高效的算子实现</font>**<font style="color:rgb(6, 6, 7);">：使用经过优化的算子库或框架，如cuDNN、TensorRT等。</font>
 + **<font style="color:rgb(6, 6, 7);">算子调度：</font>**<font style="color:rgb(6, 6, 7);">通过调度算子执行顺序等，不影响其执行逻辑条件下，降低总的计算时间</font>
 
 <h4 id="qPGMa"><font style="color:rgb(6, 6, 7);">通信优化</font></h4>
+
 + **<font style="color:rgb(6, 6, 7);">减少通信次数</font>**<font style="color:rgb(6, 6, 7);">：通过合并通信操作、批量传输数据等方式，减少通信次数。</font>
 + **<font style="color:rgb(6, 6, 7);">计算和通信重叠</font>**<font style="color:rgb(6, 6, 7);">：在计算过程中预取下一批数据，同时进行数据传输和计算。</font>
 + **<font style="color:rgb(6, 6, 7);">优化通信拓扑和原语</font>**<font style="color:rgb(6, 6, 7);">：合理设计节点间的通信连接方式、和通信原语实现，减少总通信延迟。</font>
 
 <h4 id="L80mN"><font style="color:rgb(6, 6, 7);">其他优化</font></h4>
+
 + **<font style="color:rgb(6, 6, 7);">模型优化</font>**<font style="color:rgb(6, 6, 7);">：简化模型结构、减少参数数量、使用量化技术等，降低计算复杂度</font><font style="color:rgb(6, 6, 7);">。</font>
 + **<font style="color:rgb(6, 6, 7);">资源分配</font>**<font style="color:rgb(6, 6, 7);">：合理分配CPU、GPU、通信等资源，避免资源竞争和瓶颈。</font>
 + **<font style="color:rgb(6, 6, 7);">代码优化</font>**<font style="color:rgb(6, 6, 7);">：优化代码结构和算法实现，提高代码效率。</font>
@@ -71,11 +75,13 @@
 <font style="color:rgb(38, 38, 38);">最终你需要提交以下材料：</font>
 
 <h4 id="lHTrU"><font style="color:rgb(38, 38, 38);">优化后的代码：</font></h4>
-+ <font style="color:rgb(38, 38, 38);">代码结构不做要求</font>  
-+ <font style="color:rgb(38, 38, 38);">要给出能够运行的python环境（requirement.txt）</font>  
-+ <font style="color:rgb(38, 38, 38);">要给出能成功运行代码的脚本</font>
+
++ **<font style="color:rgb(38, 38, 38);">代码结构不做要求</font>**  
++ **<font style="color:rgb(38, 38, 38);">要给出能够运行的python环境（requirement.txt）</font>**  
++ **<font style="color:rgb(38, 38, 38);">要给出能成功运行代码的脚本</font>**
 
 <h4 id="OGgyt"><font style="color:rgb(38, 38, 38);">实验报告</font></h4>
+
 + **<font style="color:rgb(38, 38, 38);">实现方法</font>**<font style="color:rgb(38, 38, 38);">：详细描述整个分析和优化过程，重点包括profiling结果的分析、优化策略的选择等</font>  
 + **<font style="color:rgb(38, 38, 38);">实验结果</font>**<font style="color:rgb(38, 38, 38);">：展示 baseline 的 profiling 结果（Top 5算子性能）</font>，<font style="color:rgb(38, 38, 38);">展示Top 5算子的roofline分析结果，以及选择对应优化后的profiling结果（包括训练时间的加速比、新的Top 5算子性能及其roofline分析结果）</font>  
 + **<font style="color:rgb(38, 38, 38);">结果分析</font>**<font style="color:rgb(38, 38, 38);">：对以上实验结果的分析，是否可以继续优化的探讨，以及实验过程中遇到的问题和解决过程</font>
