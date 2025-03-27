@@ -38,7 +38,7 @@
 + **<font style="color:rgb(6, 6, 7);">数据缓存与预取</font>**<font style="color:rgb(6, 6, 7);">：将数据缓存到内存或高速存储设备中，减少数据读取时间</font><font style="color:rgb(6, 6, 7);">。</font>
 + **<font style="color:rgb(6, 6, 7);">数据预处理流水线</font>**<font style="color:rgb(6, 6, 7);">：将数据预处理步骤分解为多个阶段，形成流水线处理，提高整体效率。</font>
 
-<h4 id="e2HyG"><font style="color:rgb(6, 6, 7);">算子实现优化</font></h4>
+<h4 id="e2HyG"><font style="color:rgb(6, 6, 7);">算子优化</font></h4>
 
 + **<font style="color:rgb(6, 6, 7);">算子融合</font>**<font style="color:rgb(6, 6, 7);">：将多个小算子合并成大算子，减少Kernel Launch开销和访存开销</font><font style="color:rgb(6, 6, 7);">。</font>
 + **<font style="color:rgb(6, 6, 7);">内存优化</font>**<font style="color:rgb(6, 6, 7);">：考虑内存分块等方式，减少全局内存访问，使用共享内存或寄存器来优化数据访问。</font>
