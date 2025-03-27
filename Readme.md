@@ -63,11 +63,12 @@
 
 <h2 id="jMxTw"><font style="color:rgb(38, 38, 38);">三、实验要求</font></h2>
 <h4 id="dvztr">模型训练性能分析与优化</h4>
-（1）训练部署：给定一个特定的模型配置，你需要在本地进行部署训练（推荐基于Pytorch平台），完成训练并确保精度达标。
 
-（2）性能Profiling：基于推荐的profiling工具，对训练的单个iteration进行分析，找出训练中耗时最久的Top 5算子，并基于Nsight compute 对这些算子进行Roofline分析<sup>[3]</sup>，找出其性能不佳的原因。
+（1）**训练部署**：给定一个特定的模型配置，你需要在本地进行部署训练（推荐基于Pytorch平台），完成训练并确保精度达标。
 
-（3）性能优化：根据profiling和分析的结果，你可以自主选择优化，验证优化前后，训练单个iteration的时间是否有改善，优化可以不止一处，效果越佳越好（只和自己的baseline比较）。
+（2）**性能Profiling**：基于推荐的profiling工具，对训练的单个iteration进行分析，找出训练中耗时最久的Top 5算子，并基于Nsight compute 对这些算子进行Roofline分析<sup>[3]</sup>，找出其性能不佳的原因。
+
+（3）**性能优化**：根据profiling和分析的结果，你可以自主选择优化，验证优化前后，训练单个iteration的时间是否有改善，优化可以不止一处，效果越佳越好（只和自己的baseline比较）。
 
 
 
