@@ -98,10 +98,9 @@
 最后更新：2025年05月08日
 
 1、硬件配置
-项目	参数	备注
-内存	32GB 	
-显卡	NVIDIA RTX 3070	8GB显存，CUDA 12.4驱动
-显存优化策略	gradient_checkpointing=True	减少显存占用
+内存：32GB 	
+显卡：NVIDIA RTX3070	8GB显存，CUDA 12.4驱动
+显存优化策略：gradient_checkpointing=True 以减少显存占用
 
 2、模型配置（Qwen3-0.6B） [https://hf-mirror.com/Qwen/Qwen3-0.6B]
 from transformers import AutoModelForCausalLM
