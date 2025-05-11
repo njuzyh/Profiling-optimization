@@ -100,7 +100,9 @@
 1、硬件配置
 
 内存：32GB 	
+
 显卡：NVIDIA RTX3070	8GB显存，CUDA 12.4驱动
+
 显存优化策略：gradient_checkpointing=True 以减少显存占用
 
 2、模型配置（Qwen3-0.6B） [https://hf-mirror.com/Qwen/Qwen3-0.6B]
@@ -117,12 +119,15 @@ model = AutoModelForCausalLM.from_pretrained(
 也可尝试其它数据集
 
 batch_size = 1 （可适当调整） 
+
 数据加载量 100条(可适当调整)
 
 4、常见问题解决方案
+
 (1)	CUDA内存不足：
 o	添加--gradient_checkpointing参数
 o	降低max_seq_length
+
 (2)	CUDA Not Available：
 o	检查Pytorch是否正确安装
 o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
