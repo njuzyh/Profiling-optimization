@@ -1,5 +1,7 @@
 <h1 id="Title">大模型训练性能Profiling和优化</h1>
 
+最后更新：2025年05月11日
+
 <h2 id="AnC0t">一、背景</h2>
 随着大模型的流行，越来越多大模型不断涌现，而它们通常拥有海量的参数，同时带来了巨大的训练开销。因此，加速模型训练成为从业者的共识。而要想顺利加速训练，我们必须要对训练过程中的性能瓶颈有所了解，并且尝试选择有效的优化策略。因此，我们需要了解常见的性能profiling工具，并熟练掌握整个性能分析优化过程。  
 
@@ -89,13 +91,15 @@
 
   
 <h2 id="sec5"><font style="color:rgb(38, 38, 38);">五、注意事项</font></h2>  
-**<font style="color:rgb(38, 38, 38);">参考文献：</font>**<font style="color:rgb(38, 38, 38);"> 如果你在实验和报告中参考了已发表的文献，请列出你所参考的相关文献。 </font>
+
+**<font style="color:rgb(38, 38, 38);">参考文献</font>**<font style="color:rgb(38, 38, 38);">：如果你在实验和报告中参考了已发表的文献，请列出你所参考的相关文献。 </font>
 
 ~~**<font style="color:rgb(38, 38, 38);">截止日期：</font>**<font style="color:rgb(38, 38, 38);"> 2025年6月20日 23:59（UTC+8）。~~ 
 如有疑问，请联系wzbwangzhibin@gmail.com 或 yuhangzhou@smail.nju.edu.cn。</font>
 
 <h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">六、本地模型训练配置</font></h2>
-可参考 mini_Qwen[4], 最后更新：2025年05月11日
+
+可参考 mini_Qwen<sup>[2]</sup>
 
 1、硬件配置
 
