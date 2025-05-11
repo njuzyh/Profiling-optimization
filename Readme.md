@@ -146,6 +146,6 @@ o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
 [2] NVIDIA Nsight Compute. [https://docs.nvidia.com/nsight-compute/index.html](https://docs.nvidia.com/nsight-compute/index.html).
 
 [3] Williams, S., Waterman, A., & Patterson, D. (2009). Roofline: an insightful visual performance model for multicore architectures. Communications of the ACM, 52(4), 65-76.  
-[4] mini_Qwen. [https://github.com/qiufengqijun/mini_qwen]
+[4] mini_Qwen. [https://github.com/qiufengqijun/mini_qwen](https://github.com/qiufengqijun/mini_qwen).
  
 
