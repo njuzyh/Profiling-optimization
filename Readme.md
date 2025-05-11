@@ -99,7 +99,7 @@
 
 <h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">六、本地模型训练配置</font></h2>
 
-可参考 mini_Qwen<sup>[2]</sup>
+可参考 mini_Qwen<sup>[4]</sup>
 
 1、硬件配置
 
