@@ -95,7 +95,7 @@
 如有疑问，请联系wzbwangzhibin@gmail.com 或 yuhangzhou@smail.nju.edu.cn。</font>
 
 <h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">六、本地模型训练配置</font></h2>
-最后更新：2025年05月08日
+可参考 mini_Qwen[4], 最后更新：2025年05月11日
 
 1、硬件配置
 
@@ -142,5 +142,6 @@ o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
 [2] NVIDIA Nsight Compute. [https://docs.nvidia.com/nsight-compute/index.html](https://docs.nvidia.com/nsight-compute/index.html).
 
 [3] Williams, S., Waterman, A., & Patterson, D. (2009). Roofline: an insightful visual performance model for multicore architectures. Communications of the ACM, 52(4), 65-76.  
+[4] mini_Qwen. [https://github.com/qiufengqijun/mini_qwen]
  
 
