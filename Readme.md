@@ -94,7 +94,7 @@
 ~~**<font style="color:rgb(38, 38, 38);">截止日期：</font>**<font style="color:rgb(38, 38, 38);"> 2025年6月20日 23:59（UTC+8）。~~ 
 如有疑问，请联系wzbwangzhibin@gmail.com 或 yuhangzhou@smail.nju.edu.cn。</font>
 
-<h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">五、本地模型训练配置</font></h2>
+<h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">六、本地模型训练配置</font></h2>
 最后更新：2025年05月08日
 
 1、硬件配置
@@ -105,18 +105,16 @@
 
 2、模型配置（Qwen3-0.6B） [https://hf-mirror.com/Qwen/Qwen3-0.6B]
 from transformers import AutoModelForCausalLM
-
 model = AutoModelForCausalLM.from_pretrained(
     "Qwen/Qwen3-0.6B",
     torch_dtype="auto",       
     device_map="auto",        
 )
 
-3、数据集配置（Alpaca-Cleaned）[https://hf-mirror.com/datasets/yahma/alpaca-cleaned]，也可尝试其它数据集
-
+3、数据集配置（Alpaca-Cleaned）[https://hf-mirror.com/datasets/yahma/alpaca-cleaned]
+也可尝试其它数据集
 batch_size = 1 （可适当调整） 
 数据加载量 100条(可适当调整)
-
 
 4、常见问题解决方案
 (1)	CUDA内存不足：
