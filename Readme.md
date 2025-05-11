@@ -94,16 +94,16 @@
 ~~**<font style="color:rgb(38, 38, 38);">截止日期：</font>**<font style="color:rgb(38, 38, 38);"> 2025年6月20日 23:59（UTC+8）。~~ 
 如有疑问，请联系wzbwangzhibin@gmail.com 或 yuhangzhou@smail.nju.edu.cn。</font>
 
-本地模型训练配置
+<h2 id="ADHXH"><font style="color:rgb(38, 38, 38);">五、本地模型训练配置</font></h2>
 最后更新：2025年05月08日
 
-一、硬件配置
+1、硬件配置
 项目	参数	备注
 内存	32GB 	
 显卡	NVIDIA RTX 3070	8GB显存，CUDA 12.4驱动
 显存优化策略	gradient_checkpointing=True	减少显存占用
 
-二、模型配置（Qwen3-0.6B） https://hf-mirror.com/Qwen/Qwen3-0.6B
+2、模型配置（Qwen3-0.6B） [https://hf-mirror.com/Qwen/Qwen3-0.6B]
 from transformers import AutoModelForCausalLM
 
 model = AutoModelForCausalLM.from_pretrained(
@@ -112,17 +112,17 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",        
 )
 
-三、数据集配置（Alpaca-Cleaned）https://hf-mirror.com/datasets/yahma/alpaca-cleaned，也可尝试其它数据集
+3、数据集配置（Alpaca-Cleaned）[https://hf-mirror.com/datasets/yahma/alpaca-cleaned]，也可尝试其它数据集
 
 batch_size = 1 （可适当调整） 
 数据加载量 100条(可适当调整)
 
 
-四、常见问题解决方案
-1.	CUDA内存不足：
+4、常见问题解决方案
+(1)	CUDA内存不足：
 o	添加--gradient_checkpointing参数
 o	降低max_seq_length
-2.	CUDA Not Available：
+(2)	CUDA Not Available：
 o	检查Pytorch是否正确安装
 o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
 
