@@ -125,11 +125,15 @@ batch_size = 1 （可适当调整）
 4、常见问题解决方案
 
 (1)	CUDA内存不足：
+
 o	添加--gradient_checkpointing参数
+
 o	降低max_seq_length
 
 (2)	CUDA Not Available：
+
 o	检查Pytorch是否正确安装
+
 o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
 
 参考文献：  
