@@ -140,7 +140,8 @@ o	检查Pytorch是否正确安装
 
 o	检查是否存在其它应用占用GPU，例如其它的Jupyter Notebook
 
-参考文献：  
+<h2 id="ADGRX">七、参考文献</h2>
+
 [1] NVIDIA Nsight Systems. [https://docs.nvidia.com/nsight-systems/index.html](https://docs.nvidia.com/nsight-systems/index.html).
 
 [2] NVIDIA Nsight Compute. [https://docs.nvidia.com/nsight-compute/index.html](https://docs.nvidia.com/nsight-compute/index.html).
